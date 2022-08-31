@@ -1,3 +1,6 @@
+import "./YearFilter.css"
+
+
 const YearFilter = (props) => {
     const onChangeEventHandeler = (event) => {
         props.onYearSelect(event.target.value);
@@ -7,7 +10,7 @@ const YearFilter = (props) => {
 
     return (
         
-            <div>
+            <div className="year__filter__wrapper">
                 <label>Select Year</label>
                 <select onChange={onChangeEventHandeler} value = {props.seleted}>
                     <option value="2020">2020</option>

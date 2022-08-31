@@ -1,0 +1,23 @@
+.year__filter__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.year__filter__wrapper label{
+    color: aliceblue;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.year__filter__wrapper select{
+    outline: none;
+    border: none;
+    width: 13%;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}

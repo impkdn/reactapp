@@ -1,12 +1,21 @@
 import "./NewExpense.css"
 import ExpenseForm from "./ExpenseForm";
 
-const NewExpense = () => {
-
+const NewExpense = (props) => {
+    const omNewExpenseData = (data) => {
+        const expenseData = {
+            ...data,
+            id : Math.random().toString()
+        }
+        props.onNewExpenseDone(expenseData)
+        console.log(expenseData);
+    }
 
     return (
         <div className="new-expense">
-            <ExpenseForm/>
+            <ExpenseForm newExpenseData = {omNewExpenseData}/>
+            <button>Add  Expenses</button>
+            
         </div>
     )
 }

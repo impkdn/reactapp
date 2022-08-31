@@ -6,3 +6,14 @@
     max-width: 95%;
     
 }
+.expenses p{
+    color: aliceblue;
+    font-size: larger;
+}
+.expenses button {
+    background-color: aquamarine;
+    font-size: larger;
+}
+.expenses button:hover{
+    cursor: pointer;
+}
