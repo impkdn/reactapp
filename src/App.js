@@ -2,6 +2,8 @@ import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/Expenses/NewExpeses/NewExpense";
 import { useState } from "react";
 
+
+
 const DUMMY__DATA = [
   {
     id: 'e1',
@@ -9,10 +11,12 @@ const DUMMY__DATA = [
     newAmount: 94.12,
     date: new Date(2020, 7, 14),
   },
-  { id: 'e2', 
-    newTitle: 'New TV', 
-    newAmount: 799.49, 
-    date: new Date(2021, 2, 12) },
+  {
+    id: 'e2',
+    newTitle: 'New TV',
+    newAmount: 799.49,
+    date: new Date(2021, 2, 12)
+  },
   {
     id: 'e3',
     newTitle: 'Car Insurance',
@@ -26,23 +30,19 @@ const DUMMY__DATA = [
     date: new Date(2021, 5, 12),
   },
 ];
+
+
+
 function App() {
   const [expenses, setUpdatedExpense] = useState(DUMMY__DATA)
   const onNewExpense = (expense) => {
-      console.log(expense);
-      setUpdatedExpense((previousExpense) => {
-        return [expense, ...previousExpense]
+
+    setUpdatedExpense((previousExpense) => {
+      return [expense, ...previousExpense]
 
 
-      })
-      console.log(expenses)
+    })
 
-    // console.log(data);
-    // const newExpenseData = {
-    //   ...data
-    // }
-    // console.log(newExpenseData)
-    // console.log("HIiii")
 
   }
 
@@ -53,5 +53,8 @@ function App() {
     </div>
   );
 }
+
+
+
 
 export default App;
