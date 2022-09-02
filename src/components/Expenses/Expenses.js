@@ -9,7 +9,7 @@ import ExpenseList from "./ExpenseList";
 import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
-    const [selectedYear, setselectedYear] = useState("2021")
+    const [selectedYear, setselectedYear] = useState("2020")
 
     const onYearSelectHander = (selected) => {
         setselectedYear(selected);
@@ -19,7 +19,7 @@ function Expenses(props) {
          return    x.date.getFullYear().toString() === selectedYear 
         }
     )
-
+    
     
    
     return (
