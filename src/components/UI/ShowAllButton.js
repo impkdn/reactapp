@@ -1,17 +1,18 @@
-import "./ShowAllButton.css"
+// import "./ShowAllButton.css"
+import classes from "./ShowAllButton.module.css"
 
 
 
-const Button = (props) => {
+const ShowAllButton = (props) => {
     
     
     
 
 
     return (
-        <button className="btn-promary" >Show All</button>
+        <button className={classes.btnPrimary} type={props.type || 'button'} onClick={props.onClick}>{props.children}</button>
     );
 }
 
 
-export default Button;
+export default ShowAllButton;

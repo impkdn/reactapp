@@ -1,0 +1,12 @@
+.btnPrimary{
+    border: none;
+    background-color: transparent;
+    /* color: rgb(66, 228, 30); */
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+
+}
+.btn-primary:hover{
+    cursor: pointer;
+}

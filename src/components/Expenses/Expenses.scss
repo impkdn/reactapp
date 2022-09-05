@@ -1,0 +1,24 @@
+$bg-color: rgb(31, 31, 31);
+
+.expenses{
+    padding: 1rem;
+    background-color: $bg-color;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    
+}
+.expenses {
+    p{
+        color: aliceblue;
+        font-size: larger;
+    }
+    button {
+        background-color: aquamarine;
+        font-size: larger;
+    }
+    
+    button:hover{
+        cursor: pointer;
+    }
+}
